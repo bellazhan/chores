@@ -14,17 +14,17 @@ import { updateRecurringChores } from '../shared/updates';
 
 const db = firebase.database().ref();
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        flexGrow: 1,
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//         flexGrow: 1,
+//     },
+//     menuButton: {
+//         marginRight: theme.spacing(2),
+//     },
+//     title: {
+//         flexGrow: 1,
+//     },
+// }));
 
 const logout = () => {
   firebase.auth().signOut().then(function() {
@@ -37,15 +37,15 @@ const logout = () => {
 function Header() {
     const [user, setUser] = useState(firebase.auth().currentUser);
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
+    // const open = Boolean(anchorEl);
 
     const handleMenu = (event) => {
         setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+    // const handleClose = () => {
+    //     setAnchorEl(null);
+    // };
 
     useEffect(() => {
         db.on('value', updateRecurringChores,error => alert(error));

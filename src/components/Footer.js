@@ -6,7 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import InsertChartIcon from '@material-ui/icons/InsertChart';
-import { MemoryRouter as Router } from 'react-router';
+// import { MemoryRouter as Router } from 'react-router';
 import { Link as RouterLink } from 'react-router-dom';
 import firebase from "../shared/firebase";
 

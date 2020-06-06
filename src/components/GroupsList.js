@@ -54,7 +54,9 @@ const GroupsList = () => {
                 <div className='GridWrapper'>
                     {
                         groups.map((group) => {
-                            if (group.gid !== 'personal') return <Group group={group} uid={uid} key={group.gid}/>;
+                            if (group.gid !== 'personal') 
+                                return <Group group={group} uid={uid} key={group.gid}/>;
+                            return <div />
                         }
                         )
                     }

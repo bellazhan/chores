@@ -36,7 +36,7 @@ const Group = ({uid, group}) => {
         return () => {
             db.off('value', handleData);
         };
-    },[]);
+    },[group.gid, uid]);
 
 
     return (

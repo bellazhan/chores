@@ -33,6 +33,8 @@ const updateRecurringChores = () => db.once('value')
                         break;
                     case "none":
                         return;
+                    default:
+                        return
                 }
                 newDay.setHours(23);
                 newDay.setMinutes(59);

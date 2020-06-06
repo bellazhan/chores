@@ -3,15 +3,15 @@ import 'firebase/database';
 import 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAiJ9Bc8vxm9aK-AU1uhaSN6FzaxFDDuTk",
-    authDomain: "choreweek.firebaseapp.com",
-    databaseURL: "https://choreweek.firebaseio.com",
-    projectId: "choreweek",
-    storageBucket: "choreweek.appspot.com",
-    messagingSenderId: "923772121106",
-    appId: "1:923772121106:web:be3bb69ee2cde95da968cb",
-    measurementId: "G-Y008LV5E0J"
-  };
+  apiKey: "AIzaSyBWtkscaekTJG8R6MqCtHiAnERfEAsDpBM",
+  authDomain: "choreweek-testing.firebaseapp.com",
+  databaseURL: "https://choreweek-testing.firebaseio.com",
+  projectId: "choreweek-testing",
+  storageBucket: "choreweek-testing.appspot.com",
+  messagingSenderId: "90145853984",
+  appId: "1:90145853984:web:67271f609c20857779a245",
+  measurementId: "G-0DD9WR6BTT"
+};
   
 firebase.initializeApp(firebaseConfig);
 

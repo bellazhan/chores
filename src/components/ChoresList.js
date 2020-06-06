@@ -62,9 +62,9 @@ const ChoresList = () => {
 
     useEffect(() => {
         if(chores.goodbye){
-            chores.goodbye.map(chore => 
-                db.child("chores").child(chore.cid).remove().catch(e => alert(e));
-            )
+            chores.goodbye.forEach(chore => {
+                db.child("chores").child(chore.cid).remove().catch(e => alert(e))
+            })
         }
     })
 

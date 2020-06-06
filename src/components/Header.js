@@ -79,7 +79,7 @@ function Header() {
                                         aria-haspopup="true"
                                         onClick={handleMenu}
                                         color="inherit"
-                                        disabled={anchorE1}
+                                        disabled={anchorEl}
                                         style={{display: 'none'}}
                                     >
                                         <PersonOutlineIcon/>
